@@ -1,0 +1,248 @@
+/* IMAGEM COMPLEMENTAR DO BANNER */
+
+
+
+.img-fluid {
+    display: none;
+}
+
+/* BANNER */
+
+.bg-overlay-secondary {
+    background: linear-gradient(45deg, rgba(59, 103, 191, 0.9), rgba(241, 171, 185, 0.8));
+
+    height: 700px;
+
+}
+
+/* TOPO */
+
+    .navbar-expand-lg {
+    display: flex;
+    justify-content: space-around;
+}
+
+
+/* ICONES DE CONTATO TOPO */
+
+.bi::before,
+[class*=" bi-"]::before,
+[class^=bi-]::before {
+    line-height: 0;
+    margin-top: 14px;
+
+}
+
+/* LOGO SOBRE */
+
+.h-101 {
+    height: 100% !important;
+}
+
+/* EXPANSÃO DO BANNER */
+
+.g-4,
+.gy-4 {
+    margin-bottom: 3rem;
+}
+
+/* EXPANSÃO DA LOGO */
+
+.logo-box img {
+    height: 50px;
+}
+
+/* CAIXA ANO */
+
+.bg-secondary-color {
+    background-color: #d4b366;
+}
+
+
+/* TRABALHO */
+
+.step-box h1 {
+    background:-webkit-linear-gradient( #d2b066);
+        -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* COR DE ÂNCORAS DE CONTATO */
+
+.social-box a {
+    background-color: #486d6d;
+}
+
+.social-box.align-items-center a i {
+    color: #fffffff5;
+}
+
+.social-box a:hover {
+    background-color: #9bb791;
+}
+
+/* ÂNCORA PÁGINA SITE */
+
+.nav-link.active {
+    color: #4b6d5a !important;
+}
+
+.nav-link:hover {
+    color: #4b6d5a !important;
+}
+
+/* ÂNCORA DROPDOWN PÁGINA SITE */
+
+.dropdown-item:hover {
+    color: #4b6d5a !important;
+    background-color: transparent;
+}
+
+/* ÂNCORA FORM */
+
+.ms-2 a {
+    text-decoration: none !important;
+    color: #000;
+}
+
+/* FORM ACTIVE */
+
+.accordion .accordion-button.collapsed {
+    background-color: #c1907f;
+    color: #fff;
+}
+
+.accordion .accordion-button:not(.collapsed) {
+    background-color: #d6b568;
+    color: #fff;
+}
+
+/*  BORDA DO FORM CONTATO */
+
+.rounded-5 {
+    border-radius: 15PX !important;
+}
+
+
+/* HOVER ÂNCORA CONTATO */
+
+.links-secondary:hover {
+color: #d2b066;
+}
+
+/* CAIXA DO FORM CONTATO  */
+
+.p-5 {
+    background-color: #bfdaf5d6;
+    border-radius: 15PX !important;
+}
+
+
+.bg-overlay-secondary {
+    background: none;
+    background: #62a092;
+}
+
+
+/* BOX DEPOIMENTO */
+
+.feedback-card {
+    height: 375px;
+}
+
+
+/* BOX SERVIÇOS */
+
+.bg-gradient-secondary {
+    background: #62a092;
+}
+
+.bg-accent-color-2 {
+    height: 485px;
+}
+
+/* MENU FIXO */
+
+.menu-fixo {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    background-color: rgba(255, 255, 255, 0.96);
+    animation: menuFixoIn 0.6s ease;
+}
+
+
+
+.menu-fixo.menu-fixo-sair {
+
+    animation: menuFixoOut 0.6s ease forwards;
+
+}
+
+
+
+@keyframes menuFixoIn {
+
+    from {
+
+        opacity: 0;
+
+        transform: translateY(-20px);
+
+    }
+
+    to {
+
+        opacity: 1;
+
+        transform: translateY(0);
+
+    }
+
+}
+
+
+
+@keyframes menuFixoOut {
+
+    from {
+
+        opacity: 1;
+
+        transform: translateY(0);
+
+    }
+
+    to {
+
+        opacity: 0;
+
+        transform: translateY(-20px);
+
+    }
+
+}
+
+
+/* H6 CONTATO FORM */
+
+
+.php {
+    font-family: var(--fonte-titulo);
+    font-size: 25px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+/* ABOUT CONTATO */
+
+.bg-primary-color {
+    height: 144px;
+    JUSTIFY-CONTENT: center;
+}
+
+.h-100 {
+    height: 75% !important;
+}
