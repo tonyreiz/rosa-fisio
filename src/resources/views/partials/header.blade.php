@@ -26,7 +26,7 @@
                   <a class=" nav-link active aria-current=page" href="{{ route('home')}}">Home</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="{{ route('home')}}">Sobre</a>
+                  <a class="nav-link" href="{{ route('sobre')}}">Sobre</a>
                 </li>
                 <li class="nav-item dropdown">
                   <a class="nav-link dropdown-toggle " href="#" role="button" data-bs-toggle="dropdown"
@@ -34,8 +34,8 @@
                     Serviços
                   </a>
                   <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="{{ route ('home')}}">Nossos Serviços</a></li>
-                    <li><a class="dropdown-item" href="service-detail-fisio.html">Detalhes do Serviço</a></li>
+                    <li><a class="dropdown-item" href="{{ route ('servico')}}">Nossos Serviços</a></li>
+                    <li><a class="dropdown-item" href="detalheFisio">Detalhes do Serviço</a></li>
 
                   </ul>
                 </li>
@@ -54,7 +54,7 @@
                   </ul>
                 </li> -->
                 <li class="nav-item">
-                  <a class="nav-link" href="{{ route('home')}}">Contato</a>
+                  <a class="nav-link" href="{{ route('contato')}}">Contato</a>
                 </li>
               </ul>
 

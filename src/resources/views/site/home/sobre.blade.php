@@ -8,7 +8,7 @@
             <div class="position-relative img-container px-0 px-lg-5">
               <!-- Primary Image -->
               <div class="ratio-wrapper-429">
-                <img src="{{ asset('image/rosa.jpg') }}" alt="Foto da Doutora Rosa"
+                <img src="{{ asset('rosa/image/rosa.jpg') }}" alt="Foto da Doutora Rosa"
                   class="w-100 h-100 object-position-center position-absolute top-0 start-0 rounded-5"
                   data-aos="fade-up" data-aos-easing="linear" data-aos-delay="500" data-aos-duration="1000">
               </div>
@@ -23,7 +23,7 @@
               <div class="position-absolute" style="top: -60px; left: 0; transform: translateX(-11%); z-index: 3;">
                 <div class="img-circle rounded-circle overflow-hidden border border-4 border-white shadow"
                   data-aos="fade-right" data-aos-easing="linear" data-aos-delay="500" data-aos-duration="1000">
-                  <img src="{{ asset('image/logo1.jpg') }}" alt="logo Doutora Rosa" class="w-100 h-101">
+                  <img src="{{ asset('rosa/image/logo1.jpg') }}" alt="logo Doutora Rosa" class="w-100 h-101">
                 </div>
               </div>
             </div>

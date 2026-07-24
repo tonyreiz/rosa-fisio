@@ -35,7 +35,7 @@
           <!-- Middle content -->
           <div class="col-12 col-md-7 col-xl-5 order-2 order-md-1">
             <div class="ratio ratio-1x1">
-              <img src="{{ asset('image/exercício físico.jpg') }}" class="w-100 h-100 object-fit-cover position-absolute rounded-5"
+              <img src="{{ asset('rosa/image/exercício físico.jpg') }}" class="w-100 h-100 object-fit-cover position-absolute rounded-5"
                 alt="Exercício Físico" data-aos="fade-up" data-aos-easing="linear" data-aos-delay="750"
                 data-aos-duration="1000">
             </div>
