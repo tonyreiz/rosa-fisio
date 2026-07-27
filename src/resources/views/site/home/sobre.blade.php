@@ -76,7 +76,7 @@
 
             <div class="d-flex align-items-center justify-content-center justify-content-xl-start gap-3"  >
 
-              <a href="{{ route('home') }}" class="btn btn-primary-solid" style="background-color: #c1907f;">Saiba Mais</a>
+              <a href="{{ route('sobre') }}" class="btn btn-primary-solid" style="background-color: #c1907f;">Saiba Mais</a>
             </div>
           </div>
         </div>

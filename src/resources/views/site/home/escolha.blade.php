@@ -29,7 +29,7 @@
                   Ambiente seguro e acolhedor</h5>
               </li>
             </ul>
-            <a href="{{ route('home') }}" class="btn btn-primary-solid mb-5" style="background-color: #c1907f;">Agende sua consulta</a>
+            <a href="{{ route('contato') }}" class="btn btn-primary-solid mb-5" style="background-color: #c1907f;">Agende sua consulta</a>
           </div>
 
           <!-- Middle content -->

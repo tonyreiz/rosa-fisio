@@ -16,7 +16,7 @@
             </p>
             <div
               class="d-flex gap-3 align-items-center my-4 flex-nowrap justify-content-lg-start justify-content-center">
-              <a href="{{ route('home')}}" role="button" class="btn btn-primary-solid">Agende sua Consulta Aqui</a>
+              <a href="{{ route('contato')}}" role="button" class="btn btn-primary-solid">Agende sua Consulta Aqui</a>
 
             </div>
           </div>

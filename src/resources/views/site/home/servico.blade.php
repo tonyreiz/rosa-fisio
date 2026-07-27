@@ -14,7 +14,7 @@
                 alt="Fisioterapia Respiratória Infantil">
               <div class="bg-accent-color-2 text-start p-4 position-relative">
 
-                <a href="{{ route('home') }}"
+                <a href="{{ route('detalheFisio') }}"
                   class="btn btn-dark btn-lg rounded-pill position-absolute top-0 end-0 me-3 fw-medium scale-hover"
                   style="margin-top: -25px;">Veja Mais</a>
                 <h3 class="font-1 mt-5" style="font-weight: 800;">Fisioterapia Respiratória Infantil</h3>
@@ -33,7 +33,7 @@
                 style="height: 250px; transform: scale(1.5); object-position: center;" alt="Aromaterapia">
               <div class="bg-accent-color-2 text-start p-4 position-relative">
 
-                <a href="{{ route('home') }}"
+                <a href="{{ route('detalheAroma') }}"
                   class="btn btn-dark btn-lg rounded-pill position-absolute top-0 end-0 me-3 fw-medium scale-hover"
                   style="margin-top: -25px;">Veja Mais</a>
                 <h3 class="font-1 mt-5" style="font-weight: 800;">Aromaterapia</h3>
@@ -53,7 +53,7 @@
                 style="height: 250px; transform: scale(1.5); object-position: center;" alt="Acunputura">
               <div class="bg-accent-color-2 text-start p-4 position-relative">
 
-                <a href="{{ route('home') }}"
+                <a href="{{ route('detalheAcunputura') }}"
                   class="btn btn-dark btn-lg rounded-pill position-absolute top-0 end-0 me-3 fw-medium scale-hover"
                   style="margin-top: -25px;">Veja Mais</a>
                 <h3 class="font-1 mt-5" style="font-weight: 800;">Acunputura</h3>
@@ -73,7 +73,7 @@
               <img src="{{ asset('rosa/image/YOGA.jpg') }}" class="w-100" style="height: 250px;object-position: center;" alt="YOGA">
               <div class="bg-accent-color-2 text-start p-4 position-relative">
 
-                <a href="{{ route('home')}}"
+                <a href="{{ route('detalheYoga')}}"
                   class="btn btn-dark btn-lg rounded-pill position-absolute top-0 end-0 me-3 fw-medium scale-hover"
                   style="margin-top: -25px;">Veja Mais</a>
                 <h3 class="font-1 mt-5" style="font-weight: 800;"> Yoga</h3>
@@ -92,7 +92,7 @@
                 alt="Práticas Alternativas - Reiki">
               <div class="bg-accent-color-2 text-start p-4 position-relative">
 
-                <a href="{{ route('home') }}"
+                <a href="{{ route('detalheAlternativa') }}"
                   class="btn btn-dark btn-lg rounded-pill position-absolute top-0 end-0 me-3 fw-medium scale-hover"
                   style="margin-top: -25px;">Veja Mais</a>
                 <h3 class="font-1 mt-5" style="font-weight: 800;">Práticas Alternativas - Reiki</h3>
@@ -110,7 +110,7 @@
                 style="height: 250px; transform: scale(1.5); object-position: center;" alt="Florais">
               <div class="bg-accent-color-2 text-start p-4 position-relative">
 
-                <a href="{{ route('home') }}"
+                <a href="{{ route('detalheFloral') }}"
                   class="btn btn-dark btn-lg rounded-pill position-absolute top-0 end-0 me-3 fw-medium scale-hover"
                   style="margin-top: -25px;">Veja Mais</a>
                 <h3 class="font-1 mt-5" style="font-weight: 800;">Florais</h3>

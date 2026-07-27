@@ -12,7 +12,7 @@
           <div class="col-12 col-xl-5 mt-4 mt-md-0">
             <p class="mb-4" style="font-size: large;">Oferecemos cuidados compassivos, combinando apoio físico e
               emocional para ajudá-lo(a) a prosperar em todos os aspectos.</p>
-            <a href="{{ route('home')}}" class="btn btn-primary-solid" style="background-color: #c1907f;">Agende sua Consulta</a>
+            <a href="{{ route('contato')}}" class="btn btn-primary-solid" style="background-color: #c1907f;">Agende sua Consulta</a>
           </div>
         </div>
 

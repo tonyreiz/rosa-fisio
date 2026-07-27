@@ -32,9 +32,9 @@
           <h4 class="text-secondary-color-2 mb-4" style="color: #d2b066;">Quick Links</h4>
           <ul class="d-flex flex-column p-0">
             <li class="mb-2"><a href="{{ route('home') }}" class="links-secondary">Home</a></li>
-              <li class="mb-2"><a href="{{ route('home') }}" class="links-secondary">Sobre </a></li>
-            <li class="mb-2"><a href="{{ route('home') }}" class="links-secondary">Serviços </a></li>
-            <li class="mb-2"><a href="{{ route('home') }}" class="links-secondary">
+              <li class="mb-2"><a href="{{ route('sobre') }}" class="links-secondary">Sobre </a></li>
+            <li class="mb-2"><a href="{{ route('servico') }}" class="links-secondary">Serviços </a></li>
+            <li class="mb-2"><a href="{{ route('contato') }}" class="links-secondary">
                 Contato</a></li>
 
           </ul>
