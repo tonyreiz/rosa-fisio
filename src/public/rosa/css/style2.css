@@ -15,6 +15,29 @@
 
 }
 
+
+.banner img {
+    width: 100%;
+}
+
+
+
+.banner .slick-prev:before,
+.banner .slick-next:before {
+    font-size: 60px;
+    color: white;
+}
+
+.banner .slick-prev {
+    left: 40px;
+    z-index: 2;
+}
+
+.banner .slick-next {
+    right: 80px;
+}
+
+
 /* TOPO */
 
     .navbar-expand-lg {
@@ -245,4 +268,30 @@ color: #d2b066;
 
 .h-100 {
     height: 75% !important;
+}
+
+/* //depoimento// */
+
+/* DEPOIMENTO */
+
+
+ .estrela ul {
+    display: flex;
+    justify-content: center;
+    padding: 50px 0;
+
+}
+
+ .estrela ul li img {
+    width: 30px;
+    height: 30px;
+
+}
+
+.estrela-ativa{
+    opacity: 1;
+}
+
+.estrela-inativa{
+    opacity: .2;
 }

@@ -1,8 +1,8 @@
     <!-- Hero Section -->
-    <section class="section hero-section d-flex align-items-center pb-0">
+ <!--   <section class="section hero-section d-flex align-items-center pb-0">
       <div class="b-container px-3 px-sm-4 px-md-0">
         <div class="row row-cols-1 row-cols-lg-2 g-4 align-items-center text-white">
-          <!-- Left Content -->
+           Left Content 
           <div class="col mt-md-5 text-center text-lg-start d-flex flex-column align-items-center align-items-lg-start"
             data-aos="fade-up" data-aos-easing="linear" data-aos-delay="500" data-aos-duration="1000">
             <h6 class="text-primary-color fw-semibold">RELAXANDO SEU CORPO E ESPIRITO</h6>
@@ -20,7 +20,7 @@
 
             </div>
           </div>
-          <!-- Video Overlay -->
+     
           <div id="videoOverlay" class="video-overlay d-none mt-0">
             <button type="button" class="position-absolute top-0 end-0 m-3 text-white fs-2 border-0 bg-transparent"
               onclick="hideVideoOverlay()" aria-label="Close">
@@ -33,9 +33,9 @@
               </div>
             </div>
           </div>
-          <!-- #video end -->
+           #video end 
 
-          <!-- Right Image -->
+          Right Image 
           <div class="col position-relative text-center pt-lg-4 pt-xl-3">
             <img src="{{ asset('rosa/image/Place-Holder-600x900.jpg') }}" alt="Hero Talent" class="img-fluid position-relative"
               style="z-index: 2;">
@@ -43,6 +43,13 @@
 
           </div>
         </div>
-      </div>
+      </div> 
     </section>
-    <!-- #hero end -->
+     #hero end -->
+
+
+     <section class="banner"  wow animate__animated animate__fadeInDown>
+        @foreach ($listaBanner as $lista)
+            <img src="{{ asset("rosa/image/banner/$lista->imagem_banner")}}" alt="{{ $lista->nome_banner}}">
+        @endforeach
+     </section>
