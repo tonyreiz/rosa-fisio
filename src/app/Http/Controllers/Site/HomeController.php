@@ -5,6 +5,7 @@ namespace App\Http\Controllers\Site;
 use App\Http\Controllers\Controller;
 use App\Models\Banner;
 use App\Models\Avaliacao;
+use App\Models\Descricao;
 class HomeController extends Controller{
 
     public function home(){

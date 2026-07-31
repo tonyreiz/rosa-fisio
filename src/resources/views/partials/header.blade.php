@@ -35,8 +35,19 @@
                   </a>
                   <ul class="dropdown-menu">
                     <li><a class="dropdown-item" href="{{ route ('servico')}}">Nossos Serviços</a></li>
-                    <li><a class="dropdown-item" href="detalheFisio">Detalhes do Serviço</a></li>
+                   
+                        
+                    <li><a class="dropdown-item" href="{{route('detalheFisio')}}">Fisioterapia Respiratória</a></li>
+                
+                    <li><a class="dropdown-item" href="{{route('detalheAroma')}}">Aromaterapia</a></li>
 
+                    <li><a class="dropdown-item" href="{{route('detalheAcunputura')}}">Acunputura</a></li>
+
+                     <li><a class="dropdown-item" href="{{route('detalheYoga')}}">Yoga</a></li>
+
+                     <li><a class="dropdown-item" href="{{route('detalheAlternativa')}}">Práticas Alternativas</a></li>
+
+                     <li><a class="dropdown-item" href="{{route('detalheFloral')}}">Florais</a></li>
                   </ul>
                 </li>
                 <!-- <li class="nav-item dropdown">

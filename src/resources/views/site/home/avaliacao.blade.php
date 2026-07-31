@@ -14,49 +14,50 @@
               serviço, acompanhamento e resultados.</p>
           </div>
         </div>
-        @forelse ($listaAvaliacao as $lista)
-        @php
-            $estrela = max(
-              0,
-              min(5, (int) $lista->estrela_avaliacao)
-            );
 
-            $cliente = $lista->AvaliacaoCliente
-        @endphp
-        
-                <div class="swiper mySwiper mt-4">
-                  <div class="swiper-wrapper">
-                
-                    <!-- Card 4 -->
-                    <div class="swiper-slide">
-                      <div class="card feedback-card">
-                        <div class="d-flex align-content-center mb-3">
-                          <div class="estrela">
-                            <ul>
-                              @for ($i = 0; $i < 5; $i++)
-                                <li class="{{ $i <= $estrela ? 'estrela-ativa' : 'estrela-inativa'}}"><img src="{{ asset('rosa/image/Star.png')}}" alt="{{
-                                    $i <= $estrela ? 'estrela preenchida' : 'estrela não preenchida'}}">
-                                </li>
-                              @endfor
-                              </ul>
+        <div class="swiper mySwiper mt-4">
+          <div class="swiper-wrapper">
+          @forelse ($listaAvaliacao as $lista)
+          @php
+              $estrela = max(
+                0,
+                min(5, (int) $lista->estrela_avaliacao)
+              );
+
+              $cliente = $lista->AvaliacaoCliente
+          @endphp
+          
+                  
+                      <!-- Card 4 -->
+                      <div class="swiper-slide">
+                        <div class="card feedback-card">
+                          <div class="d-flex align-content-center mb-3">
+                            <div class="estrela">
+                              <ul>
+                                @for ($i = 0; $i <= 5; $i++)
+                                  <li class="{{ $i <= $estrela ? 'estrela-ativa' : 'estrela-inativa'}}"><img src="{{ asset('rosa/image/Star.png')}}" alt="{{
+                                      $i <= $estrela ? 'estrela preenchida' : 'estrela não preenchida'}}">
+                                  </li>
+                                @endfor
+                                </ul>
+                            </div>
                           </div>
-                        </div>
-                        <p class="fw-bold">{{$lista->descricao_avaliacao}}</p>
-                        <div class="d-flex align-items-center mt-2">
-                          <img src="{{ asset("rosa/image/$cliente->foto_cliente") }}" alt="{{$cliente->nome_cliente}}"
-                            style="width: 64px; height: 64px; border-radius:50%; margin-right: 10px;">
-                          <div class="mt-4">
-                            <h5 class="font-1 fw-bold text-primary-color">{{$cliente->nome_cliente}}</h5>
-                            <p class="text-muted-color">Cliente</p>
+                          <p class="fw-bold">{{$lista->descricao_avaliacao}}</p>
+                          <div class="d-flex align-items-center mt-2">
+                            <img src="{{ asset("rosa/image/$cliente->foto_cliente") }}" alt="{{$cliente->nome_cliente}}"
+                              style="width: 64px; height: 64px; border-radius:50%; margin-right: 10px;">
+                            <div class="mt-4">
+                              <h5 class="font-1 fw-bold text-primary-color">{{$cliente->nome_cliente}}</h5>
+                              <p class="text-muted-color">Cliente</p>
+                            </div>
                           </div>
                         </div>
                       </div>
-                    </div>
+                      @empty
+                      
+                      @endforelse
                   </div>
                 </div>
-        @empty
-            
-        @endforelse
       </div>
     </section>
     <!-- #feedback end -->
