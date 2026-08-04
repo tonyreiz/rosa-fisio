@@ -14,11 +14,13 @@
               </div>
             </div>
           </div>
-          <!-- Center Text Side -->
+
+          @foreach ($listaFisio as $lista)
+              
           <div class="col-xl-8">
             <div class="row">
               <h6 class="text-primary-color fw-semibold mb-2" style="color: #000;">Rosa Fisioterapia</h6>
-              <h2 class="font-1 mb-4" style="font-weight: 800; color: #486d6d;">Porque a sua Saúde<br>Física Importa</h2>
+              <h2 class="font-1 mb-4" style="font-weight: 800; color: #486d6d;">{{$lista->titulo_sobre_fisio}}</h2>
             </div>
             <div class="row">
               <div class="col-12 col-md-7">
@@ -26,27 +28,16 @@
                   <li class="d-flex align-items-start mb-2">
                     <i class="bi bi-chevron-right text-primary-color me-2 py-3"></i>
                     <span>
-                      Priorizar o bem-estar ajuda você a prosperar emocionalmente, socialmente e pessoalmente todos os
-                      dias.</span>
+                      {{$lista->texto_topico_sobre_fisio}}</span>
                   </li>
-                  <li class="d-flex align-items-start mb-2">
-                    <i class="bi bi-chevron-right text-primary-color me-2 py-3"></i>
-                    <span>
-                      Corpos fortes constroem vidas fortes; apoio e cuidado criam uma paz duradoura.</span>
-                  </li>
-                  <li class="d-flex align-items-start mb-2">
-                    <i class="bi bi-chevron-right text-primary-color me-2 py-3"></i>
-                    <span>Consultas com tratamento personalizado ajudam a previnir situações futuras.</span>
-                  </li>
-                  <li class="d-flex align-items-start mb-2">
-                    <i class="bi bi-chevron-right text-primary-color me-2 py-3"></i>
-                    <span>Desenvolver uma rotina saudável é essencial para manter o bem-estar físico e mental.</span>
-                  </li>
+                
                 </ul>
               </div>
 
             </div>
           </div>
+          @endforeach
+          <!-- Center Text Side -->
         </div>
       </div>
     </section>

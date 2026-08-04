@@ -34,7 +34,7 @@ services:
 
   phpmyadmin:
     image: phpmyadmin:latest
-    container_name: casa-barista-phpmyadmin
+    container_name: rosa-cliente-phpmyadmin
     restart: always
     ports:
       - "8081:80"

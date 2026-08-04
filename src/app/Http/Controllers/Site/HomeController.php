@@ -5,7 +5,7 @@ namespace App\Http\Controllers\Site;
 use App\Http\Controllers\Controller;
 use App\Models\Banner;
 use App\Models\Avaliacao;
-use App\Models\Descricao;
+use App\Models\Servico;
 class HomeController extends Controller{
 
     public function home(){
@@ -18,8 +18,10 @@ class HomeController extends Controller{
         ->orderByDesc('id_avaliacao')
         ->get();
      
-
-
-        return view('site.home.home', compact('listaBanner', 'listaAvaliacao'));
+        $listaServico = Servico::where('status_servico_resumo', 'ATIVO')
+        ->inRandomOrder()
+        ->get();
+            
+        return view('site.home.home', compact('listaBanner', 'listaAvaliacao', 'listaServico'));
     }
 }

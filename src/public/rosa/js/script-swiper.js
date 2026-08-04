@@ -1,6 +1,6 @@
 $(document).ready(function () {
   const swiper = new Swiper('.mySwiper', {
-    slidesPerView: 1,
+    slidesPerView: 0,
     spaceBetween: 20,
     loop: true,
     centeredSlides: false, // pastikan ini false

@@ -12,5 +12,7 @@
   <script src="{{ asset('rosa/js/script-swiper.js') }}"></script>
   <script src="{{ asset('rosa/js/script-counter.js') }}"></script>
   <script src="{{ asset('rosa/js/video-player.js') }}"></script>
+  <script src="{{ asset('rosa/js/slick.min.js')}}"></script>
+  <script src="{{ asset('rosa/js/wow.min.js')}}"></script>
   <script src="{{ asset('rosa/js/script.js') }}"></script>
   <!-- #scripts end -->
