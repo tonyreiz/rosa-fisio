@@ -34,8 +34,8 @@
                           <div class="d-flex align-content-center mb-3">
                             <div class="estrela">
                               <ul>
-                                @for ($i = 0; $i <= 5; $i++)
-                                  <li class="{{ $i <= $estrela ? 'estrela-ativa' : 'estrela-inativa'}}"><img src="{{ asset('rosa/image/Star.png')}}" alt="{{
+                                @for ($i = 0; $i < 5; $i++)
+                                  <li class="{{ $i < $estrela ? 'estrela-ativa' : 'estrela-inativa'}}"><img src="{{ asset('rosa/image/Star.png')}}" alt="{{
                                       $i <= $estrela ? 'estrela preenchida' : 'estrela não preenchida'}}">
                                   </li>
                                 @endfor
@@ -47,7 +47,7 @@
                             <img src="{{ asset("rosa/image/$cliente->foto_cliente") }}" alt="{{$cliente->nome_cliente}}"
                               style="width: 64px; height: 64px; border-radius:50%; margin-right: 10px;">
                             <div class="mt-4">
-                              <h5 class="font-1 fw-bold text-primary-color">{{$cliente->nome_cliente}}</h5>
+                              <h5 class="font-1 fw-bold text-primary-color" style="color: #000;">{{$cliente->nome_cliente}}</h5>
                               <p class="text-muted-color">Cliente</p>
                             </div>
                           </div>

@@ -20,6 +20,26 @@ use App\Http\Controllers\Site\DetalhefloralController;
 
 use App\Http\Controllers\Site\ContatoController;
 
+use App\Http\Controllers\Site\AdminController;
+
+use App\Http\Controllers\Site\BannerController;
+
+use App\Http\Controllers\Site\ClienteController;
+
+use App\Http\Controllers\Site\FaqController;
+
+use App\Http\Controllers\Site\AvaliacaoController;
+
+use App\Http\Controllers\Site\AdminservicoController;
+
+use App\Http\Controllers\Site\AdminsobreFisioController;
+
+use App\Http\Controllers\Site\AdminsobreController;
+
+use App\Http\Controllers\Site\UsuarioController;
+
+use App\Http\Controllers\Site\DescricaoController;
+
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', [HomeController::class, 'home'])->name('home');
@@ -41,3 +61,23 @@ Route::get('detalheAlternativa', [DetalhealternativaController::class, 'detalheA
 Route::get('detalheFloral', [ DetalhefloralController::class, 'detalheFloral'])->name('detalheFloral');
 
 Route::get('contato', [ContatoController::class, 'contato'])->name('contato');
+
+Route::get('/dash', [AdminController::class, 'dash'])->name('dash');
+
+Route::get('/banners', [BannerController::class, 'index'])->name('admin.banner.index');
+
+Route::get('/clientes', [ClienteController::class, 'cliente'])->name('admin.cliente.index');
+
+Route::get('/faqs', [FaqController::class, 'faq'])->name('admin.faq.index');
+
+Route::get('/avaliacoes', [AvaliacaoController::class, 'avaliacao'])->name('admin.avaliacao.index');
+
+Route::get('/servicos', [AdminservicoController::class, 'servicos'])->name('admin.servico.index');
+
+Route::get('/sobrefisio', [AdminsobreFisioController::class, 'sobre'])->name('admin.sobreFisio.index');
+
+Route::get('/sobres', [AdminsobreController::class, 'sobre'])->name('admin.sobre.index');
+
+Route::get('/usuarios', [UsuarioController::class, 'usuario'])->name('admin.usuario.index');
+
+Route::get('/descricoes', [DescricaoController::class, 'descricao'])->name('admin.descricao.index');

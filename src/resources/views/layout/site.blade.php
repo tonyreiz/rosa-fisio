@@ -1,19 +1,19 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    @include('partials.head')
+    @include('partials.site.head')
 </head>
 <body>
-    @include('partials.header')
+    @include('partials.site.header')
     <main>
 
         
     @yield('content')
     </main>
     
-    @include('partials.footer')
+    @include('partials.site.footer')
     
-    @include('partials.script')
+    @include('partials.site.script')
 </body>
 
 </html>

@@ -17,8 +17,8 @@ class ServicoController extends Controller{
     $listaServico = Servico::where('status_servico_resumo', 'ATIVO')
     ->inRandomOrder()    
     ->get();
-    
-     
-        return view('site.servico.servico_pg', compact( 'listaAvaliacao', 'listaServico'));
+
+
+    return view('site.servico.servico_pg', compact( 'listaAvaliacao', 'listaServico'));
     }
 }
