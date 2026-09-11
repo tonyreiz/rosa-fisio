@@ -1,0 +1,250 @@
+/* FONTES
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
+@import url('../css/vendor/bootstrap.min.css');
+
+/* ---------------------------- */
+/* Custom properties            */
+/* ---------------------------- */
+:root {
+  --primary-color:#1747A6;
+  --secondary-color:#F291A3;
+  --text-color:#191919;
+  --text-color-2:#7A7A7A;
+  --accent-color:#3B67BF;
+  --accent-color-2:#F2BBC5;
+  --accent-color-3:#FBEAED;
+  --font-1:"Nunito", sans-serif;
+  --font-2:"Source Sans 3", sans-serif;
+}
+
+
+
+
+/* NAV */
+
+
+.app-sidebar{
+    background: #3f786b !important;
+}
+
+.sidebar-wrapper .nav-item {
+  max-width: 100%;
+  display: flex;
+  align-items: center;
+
+}
+
+.sidebar-wrapper .sidebar-menu > .nav-item.menu-open > .nav-link.active{
+    background-color: #f40000e3;
+}
+
+.sidebar-wrapper .sidebar-menu > .nav-item > .nav-link:hover, .sidebar-wrapper .sidebar-menu > .nav-item > .nav-link:focus{
+    background-color: #3f786b;
+}
+
+.sidebar-menu .nav-header{
+    font-size: 1.2rem;
+    font-family: var(--font-1);
+    color:#c1907f;
+    font-weight: 600;
+}
+
+
+.sidebar-menu .nav-link p{
+    font-size: 0.9rem;
+    font-family: var(--fonte-texto);
+    color: #ffffff;
+}
+
+.sidebar-wrapper .nav-icon{
+ 
+    color: #fff;
+}
+
+.nav-item p{
+    font-size: 0.9rem;
+    font-family: var(--fonte-texto);
+    color: #ffffff;
+    align-items: center;
+}
+
+/* BOTÃO SEARCH */
+.app-main .app-content-header .breadcrumb a:hover {
+  color: #c1907f;
+  text-decoration: none;
+}
+
+
+
+/* LOGO */
+
+.sidebar-brand .brand-link .brand-image{
+    padding: 20px 0;
+    max-height: 90px;
+}
+
+
+
+.app-footer{
+    background-color: #62a092;
+    color: #fff;
+}
+
+
+/*INPUT*/
+
+.form-control:focus{
+    border-color: #c1907f !important;
+    box-shadow: #c1907f  0 0 10px;
+}
+
+.text-bg-primary{
+    background-color: var(--cor-secundaria-2)  !important;
+}
+
+
+/* BOTÃO INPUT */
+
+.btn:hover{
+    border-color: #c1907f !important;
+    box-shadow: #c1907f  0 0 10px;
+
+}
+
+/*CARDS*/
+
+.small-box{
+    background-color: var(--accent-color-2)  !important;
+}
+
+
+/*TEXTO CARDS*/
+
+.small-box h3{
+    color: #fff;
+    font-family: var(--fonte-texto);
+}
+
+
+.small-box p{
+    color: #fff;
+    font-family: var(--fonte-texto);
+}
+
+/*TEXTO FOOTER*/
+
+ .small-box > .small-box-footer{
+    color: #fff !important;
+}
+
+/*ÍCONES*/
+
+ .small-box .small-box-icon{
+    color: rgba(0, 0, 0, 0.444) !important;
+}
+
+/*ÂNCORAGEM DE CAMINHO*/
+
+.app-main .app-content-header .breadcrumb a{
+    color: var(--cor-secundaria-2);
+}
+
+
+/* TÍTULO PRINCIPÁL */
+
+.fs-3{
+    font-family: var(--fonte-titulo);
+}
+
+h1, .h1{
+    font-family: var(--fonte-titulo);
+}
+
+/* SPAN TÍTULO BANNER */
+
+.badge{
+    color: #000;
+    font-size: 15px;
+}
+
+[data-bs-theme = "dark"] .badge{
+    color: #fff;
+}
+
+/* SELECTION TABELA*/
+
+.form-select-sm{
+    border-radius: var(--cor-secundaria-2) !important;
+}
+
+[data-bs-theme = "dark"] .input-group-text:hover{
+    border-color: var(--cor-secundaria-2) !important;
+  box-shadow: var(--cor-secundaria-2) 0 0 10px;
+  background-color: rgba(0, 0, 0, 0.752);
+}
+
+/* BANNER */
+.banner-upload {
+    position: relative;
+ 
+    display: block;
+ 
+    width: 100%;
+    height: 180px;
+ 
+    overflow: hidden;
+ 
+    border: 2px dashed #c1907f;
+    border-radius: 8px;
+ 
+    cursor: pointer;
+ 
+    background-color: rgba(193, 144, 127, 0.418);
+}
+ 
+.banner-upload img {
+    width: 100%;
+    height: 100%;
+ 
+    object-fit: cover;
+ 
+    display: block;
+}
+ 
+.banner-upload-overlay {
+    position: absolute;
+ 
+    inset: 0;
+ 
+    display: flex;
+    flex-direction: column;
+ 
+    align-items: center;
+    justify-content: center;
+ 
+    gap: 8px;
+ 
+    background-color: rgba(0, 0, 0, 0.45);
+ 
+    color: #ffffff;
+ 
+    font-size: 14px;
+    font-weight: 600;
+ 
+    transition: 0.3s;
+}
+ 
+.banner-upload-overlay i {
+    font-size: 28px;
+}
+ 
+.banner-upload:hover .banner-upload-overlay {
+    background-color: rgba(0, 0, 0, 0.60);
+}
+ 
+ 
+.input-banner{
+    display: none;
+}
